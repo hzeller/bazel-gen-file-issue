@@ -55,3 +55,13 @@ Is there a flag that re-enables the correct behavior in newer bazels ?
     and bazel does not bother copying it back locally. Which is problematic,
     as it means this only behaves correctly if the remote cache
     is disabled.
+
+## FIX
+
+When a remote cache is enabled, bazel elects only to download the artifacts
+requested, not any intermediate outputs.
+
+https://blog.bazel.build/2023/12/11/bazel-7-release.html#build-without-the-bytes-bwob
+
+This can be re-enabled by setting flag `--remote_download_outputs=all`
+
