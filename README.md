@@ -37,7 +37,7 @@ results, so `foo.cc` is not visible:
 bazel-8.0.1 clean --expunge ; bazel-8.0.1 build :foo ; ls -l bazel-bin/foo.cc bazel-bin/foo
 # ...
 ls: cannot access 'bazel-bin/foo.cc': No such file or directory
--r-xr-xr-x 1 hzeller primarygroup 7608 Jan 29 10:29 bazel-bin/foo
+-r-xr-xr-x 1 user group 7608 Jan 29 10:29 bazel-bin/foo
 ```
 
 This of course is a major headache: now any tooling such as editors will not
