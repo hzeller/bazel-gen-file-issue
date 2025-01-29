@@ -1,5 +1,5 @@
-Issue retaining intermediate files with bzlmod enabled
-======================================================
+Issue retaining intermediate files with newer bazels 
+====================================================
 
 Consider the following [`BUILD`](./BUILD) file:
 
