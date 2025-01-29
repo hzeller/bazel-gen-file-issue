@@ -45,3 +45,13 @@ be able to see and index generated files, making the default behavior not
 desirable.
 
 Is there a flag that re-enables the correct behavior in newer bazels ?
+
+## Updates
+
+  * Running with `-s` shows nicely how the file is generated, but it
+    does not show up afterwards.
+  * this only seems to happen with a remote cache enabled and the
+    second time it is executed. So the file is there possibly remotely,
+    and bazel does not bother copying it back locally. Which is problematic,
+    as it means this only behaves correctly if the remote cache
+    is disabled.
